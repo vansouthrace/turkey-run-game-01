@@ -1,0 +1,27 @@
+/* Gobble Dash — autumn farm palette, centred canvas, no external assets. */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  min-height: 100vh;
+  background: #2b1a0e radial-gradient(circle at 50% 20%, #5a3418 0%, #2b1a0e 70%);
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color: #ffe9c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stage { text-align: center; padding: 12px; }
+#game {
+  display: block;
+  width: min(960px, 96vw);
+  height: auto;
+  border: 4px solid #c97b2d;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  background: #f7c873;
+  cursor: pointer;
+}
+#hint { margin-top: 10px; font-size: 14px; letter-spacing: 0.4px; opacity: 0.9; }
+#hint b { color: #ffd27a; }
+noscript p { color: #ffd27a; }
